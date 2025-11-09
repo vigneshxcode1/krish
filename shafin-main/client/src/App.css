@@ -27,3 +27,7 @@ border-bottom-right-radius: 10px;
      filter: drop-shadow(0 0 0.75rem rgba(223, 133, 15, 0.76));
 }
 
+body{
+box-sizing: border-box;
+margin: 0;
+}
