@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
 import "./toastify.css";
 import Dashbroad from "../Dashbroad";
 
- const BASE_URL = "https://shafin-backend.onrender.com";
+ const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 //const BASE_URL = "http://localhost:8000";
 
@@ -19,7 +18,6 @@ const Createproducts = () => {
   const [describe, setDescription] = useState("");
   const [seller, setSeller] = useState("");
   const [rating, setRating] = useState("");
-  const [size, setSize] = useState("m");
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -41,11 +39,10 @@ const Createproducts = () => {
     formData.append("describe", describe);
     formData.append("seller", seller);
     formData.append("rating", rating);
-    formData.append("size", size);
   
-    // Append images as individual fields
+  
     images.forEach((image, index) => {
-      formData.append("images", image);  // Add each image URL as a separate field
+      formData.append("images", image);  
     });
   
     try {
@@ -80,9 +77,9 @@ const Createproducts = () => {
   const handleImageUrlChange = (e) => {
     const urlString = e.target.value.trim();
     const imageArray = urlString.split(",").map((url) => url.trim());
-    setImages(imageArray.filter((url) => url !== "")); // Remove empty strings
+    setImages(imageArray.filter((url) => url !== "")); 
   
-    // Optional: Set default image URLs if fewer than 3 images are provided
+    
     if (imageArray.length < 3) {
       while (imageArray.length < 3) {
         imageArray.push("default_image_url_here");
@@ -177,16 +174,9 @@ const Createproducts = () => {
               >
                 <option value="">Select category</option>
 
-                <option value="newarrival">newarrival</option>
-                <option value="bestseller">bestseller</option>
-                <option value="zcommuntity">zcommuntity</option>
-                <option value="animi-oversizes-t-shirts">
-                  Anime Oversized T-shirts
-                </option>
-                <option value="caroversized">CarOversizes</option>
-                <option value="music">music tees</option>
-                <option value="bike">bike tess</option>
-                <option value="sportoversized">sport tees</option>
+                <option value="iphone">iphone</option>
+                <option value="android">android</option>
+        
               </select>
             </div>
             <div className="mb-3">

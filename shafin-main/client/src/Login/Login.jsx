@@ -10,7 +10,7 @@ import "./Login.css";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "./firebase";
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 function Login() {
   const [email, setEmail] = useState("");

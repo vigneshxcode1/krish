@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 // const BASE_URL = "https://shafin-server.onrender.com";
 
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 export const Deletedproducts=()=>{
   const [products, setProducts] = useState([]);

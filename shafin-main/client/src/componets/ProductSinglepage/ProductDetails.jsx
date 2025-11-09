@@ -5,13 +5,13 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./productDetails.css";
 
-import loadingimg from "../../componets/images/animiloading.gif";
+import loadingimg from "../../componets/images/73qh.gif";
 import Navbar from "../Navbar/Navbar.jsx";
 import { addCartItem } from "../../localStorageHelpers.jsx";
 import Accordion from "react-bootstrap/Accordion";
 import Bestseller from "../../componets/Product/slidercard/Bestseller.jsx";
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 // const BASE_URL = "http://localhost:8000"
 
@@ -92,7 +92,9 @@ const ProductDetail = () => {
 
   return (
     <>
+    <br />
       <Navbar />
+
       <div className="product-detail-container">
         <div className="product-detail">
           <div className="product-images">
@@ -140,26 +142,9 @@ const ProductDetail = () => {
               Category :{product.category}
             </p>
          
-
-            <div className="size-container-size">
-              <label htmlFor="size" id="sizechart">Select Size</label>
-              <select
-                id="size"
-                value={selectedSize}
-                onChange={(e) => setSelectedSize(e.target.value)}
-              >
-                {!(product.color === "green" || product.color === "beige") && (
-                  <option value="s">S</option>
-                )}
-                <option value="m">M</option>
-                <option value="l">L</option>
-                <option value="xl">XL</option>
-              </select>
-            
-            </div>
-            <br />
+        
             <p className="product-detail-category">
-            <a href="/sizeimage" id="view" >view  sizechart</a>
+         
             </p>
 
             <div className="quantity-container">

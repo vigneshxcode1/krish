@@ -31,6 +31,7 @@ const Entry = () => {
         <h1 className="brand-img">name</h1>
         <p className="subhead">qoute</p>
         <nav className="main-links" id="main-link">
+
           <Link to="/home" className="link-main">
             <h1 id="link"className="link-item">SHOP</h1>
           </Link>

@@ -5,7 +5,7 @@ import axios from "axios";
 // import loadingimg from "../../../componets/images/7GtC.gif"
 import './zculture.css'
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 const Trendingshirt = () => {
   const [products, setProducts] = useState([]);

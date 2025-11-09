@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link, useNavigate } from 'react-router-dom';
 
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 function Signup() {
   const [username, setName] = useState('');

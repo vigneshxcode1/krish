@@ -4,13 +4,12 @@ import axios from "axios";
 import "../cart.css";
 
 
-const BASE_URL = "https://shafin-backend.onrender.com";
+const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
 const ShippingPage = () => {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
- 
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
   const [phone, setPhone] = useState("");
@@ -70,7 +69,6 @@ PIN: ${pin}
         cartItemsMessage += `
 Product Name: ${item.name}
 Quantity: ${item.quantity}
-Size:${item.size} 
 color:${item.color}
 Price: Rs:${item.price}
 Total: Rs${item.quantity * item.price}
@@ -83,7 +81,7 @@ Description: ${item.describe}
       localStorage.removeItem("cart");
       setCartData([]);
       const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-      const whatsappURL = `https://api.whatsapp.com/send?phone=7010434690&text=${encodeURIComponent(
+      const whatsappURL = `https://api.whatsapp.com/send?phone=7338821735&text=${encodeURIComponent(
         message + cartItemsMessage + googleMapsLink
       )}`;
       window.location.href = whatsappURL;

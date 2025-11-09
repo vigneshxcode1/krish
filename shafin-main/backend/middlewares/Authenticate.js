@@ -17,6 +17,7 @@ export const isauthticateuser = async (req, res, next) => {
         const decode = jwt.verify(token, JWT_SECRET);
         req.user = await userModel.findById(decode.id);
         next();
+        
     } catch (error) {
         console.error(error);
         res.status(401).json({

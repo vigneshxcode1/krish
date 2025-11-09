@@ -32,6 +32,7 @@
 
 .product-cutprices{
   color: #000000;
+  text-decoration: line-through 2px;
 }
 .product-prices{
   color: #000000;
