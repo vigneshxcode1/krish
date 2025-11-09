@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Enter.css";
-import backgroundVideo from "../componets/images/entry.mp4"; 
+import backgroundVideo from "../componets/images/entry1.mp4"; 
 
 const Entry = () => {
   const videoRef = useRef(null);
@@ -28,10 +28,10 @@ const Entry = () => {
     <div className="background">
       <video ref={videoRef} src={backgroundVideo} type="video/mp4" autoPlay loop muted playsInline className="background-video" />
       <div className="text-overlay">
-        <h1 className="brand-img">name</h1>
+        <h1 className="brand-img">NAME</h1>
         <p className="subhead">qoute</p>
         <nav className="main-links" id="main-link">
-
+          
           <Link to="/home" className="link-main">
             <h1 id="link"className="link-item">SHOP</h1>
           </Link>

@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
 import "./Login.css";
 
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "./firebase";
 
 const BASE_URL = "https://krish-backend-ka3t.onrender.com";
 
@@ -79,22 +77,11 @@ function Login() {
       });
   };
 
-  
-  const googlesigin = async () => {
-    const provider = new GoogleAuthProvider();
-   
-    signInWithPopup(auth, provider).then((result) => {
-      if (result.user.email == "vvigneshwaran518@gmail.com") {
-        navigate("/dashbroad");
-      } else {
-        navigate("/profile");
-      }
-    });
-  };
+
 
   return (
     <div className="container mt-5">
-      <ToastContainer /> {/* Add ToastContainer here */}
+      <ToastContainer /> 
       <div className="row justify-content-center">
         <div className="col-md-6">
           <div className="card">
@@ -130,12 +117,6 @@ function Login() {
               </Form>
 
               <br />
-
-            <p className="loginmsg">NEW USER QUICK LOGIN USING GOOGLE SIGIN</p>
-
-              <button className="googlebtn" onClick={googlesigin} variant="primary" type="submit">
-                google signin
-              </button>
             </div>
           </div>
         </div>

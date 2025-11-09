@@ -13,7 +13,7 @@
   margin-top: -30px;
   font-style: italic;
   font-family:'Times New Roman', Times, serif;
-  color: rgb(251, 251, 251);
+  color: rgb(30, 29, 29);
   
 }
 .background-video {
@@ -37,7 +37,7 @@
   text-decoration: none;
   align-items: center;
   z-index: 1;
-  color: white;
+  color: rgb(18, 18, 18);
   text-align: center;
 }
 
@@ -47,7 +47,7 @@
   font-family:'mont';
   font-weight: 700;
   margin-bottom: 20px;
- 
+ color: rgb(0, 0, 0);
 }
 
 .main-links {
@@ -68,9 +68,9 @@ h1 .link-item {
 }
 
 #link{
-  color: #fff;
+  color: #c1bdbd;
   text-decoration: none;
-  background-color: #0a0a0a32;
+  background-color: #9797971d;
 
 }
 
@@ -107,7 +107,7 @@ h1 .link-item {
   .brand-img {
     margin-top: 40px;
     font-size: 70px;
-    color: rgb(221, 224, 224);
+    color: rgb(2, 2, 2);
   }
 
   .main-links {

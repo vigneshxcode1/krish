@@ -32,7 +32,7 @@ import Testamonial from "./pages/Testimonial/Testamonial.jsx";
 import Createtestimonial from "./pages/Testimonial/createtestimonial'/Createtestimonial.jsx";
 import { Showalltestimonial } from "./pages/Testimonial/createtestimonial'/ShowTestimonial.jsx";
 import { Deletedtestimonial } from "./pages/Testimonial/Deletetestimonial.jsx";
-import Profile from "./Login/Profile.jsx";
+
 import Gallery from "./pages/gallery/Gallery.jsx";
 import Creategallery from './pages/gallery/Creategallery.jsx'
 import Sizechart from "./pages/Sizechart.jsx";
@@ -70,7 +70,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
+        
 
         <Route path="/dashbroad" element={<Dashbroad />} />
         <Route path="/createproduct" element={<Createproducts />} />
